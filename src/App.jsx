@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import headerDesktop from './assets/images/image-header-desktop.jpg';
+import headerMobile from './assets/images/image-header-mobile.jpg';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <main className="w-full h-screen flex justify-center items-center">
+      <div className="flex">
+        <div className="">
+          <h1 className="text-3xl font-bold">Get <mark>insights</mark> that help your business grow.</h1>
+          <p>
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+
+          <div>
+            <div>
+              <h2>10k+</h2>
+              <p>companies</p>
+            </div>
+            <div>
+              <h2>314</h2>
+              <p>templates</p>
+            </div>
+            <div>
+              <h2>12m+</h2>
+              <p>queries</p>
+            </div>
+          </div>
+        </div>
+        <div >
+
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </main>
+  );
 }
 
-export default App
+export default App;

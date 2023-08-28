@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: hsl(233, 47%, 7%);
   color: white;
 }
@@ -17,4 +17,16 @@ body {
 mark {
   color: hsl(277, 64%, 61%);
   background: none;
+}
+
+.filter-image {
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+}
+
+.leading-title {
+  line-height: 1.22 !important;
+}
+.leading-paragraph {
+  line-height: 1.67;
 }

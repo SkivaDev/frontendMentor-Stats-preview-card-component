@@ -5,9 +5,9 @@ import headerMobile from "./assets/images/image-header-mobile.jpg";
 function App() {
 
   return (
-    <main className="w-full h-screen flex justify-center items-center">
-      <div className="flex md:flex-row flex-col-reverse lg:h-[445px] md:h-[400px] w-[1111px] bg-desaturated_blue rounded-lg m-[25px]">
-        <div className="md:w-[51.4%] lg:p-[71px] p-[30px] md:p-[60px] lg:pb-[60px] md:pb-[55px] md:flex md:flex-col md:justify-between lg:text-left text-center ">
+    <main className="w-full h-screen flex justify-center md:items-center">
+      <div className="flex md:flex-row flex-col-reverse justify-end lg:h-[445px] md:h-[400px] h-[770px] md:w-[1111px] max-w-[550px] md:max-w-none bg-desaturated_blue rounded-lg m-[25px] overflow-hidden">
+        <div className="md:w-[51.4%] lg:p-[71px] p-[30px] md:p-[60px] lg:pb-[60px] md:pb-[55px] md:flex md:flex-col md:justify-between lg:text-left text-center">
           <div className="flex flex-col gap-[25px] md:mb-0 mb-[60px]">
             <h1 className="lg:text-4xl md:text-[28px] text-[28px] font-bold leading-title">
               Get <mark>insights</mark> that help your business grow.
@@ -39,7 +39,7 @@ function App() {
             </div>
           </div>
         </div>
-        <picture className="md:flex-1 lg:w-auto bg-soft_violet rounded-t-lg md:rounded-r-lg">
+        <picture className="md:flex-1 md:h-auto lg:w-auto bg-soft_violet ">
           <source media="(min-width): 877px" srcSet={headerMobile} />
           <img
             src={headerDesktop}
